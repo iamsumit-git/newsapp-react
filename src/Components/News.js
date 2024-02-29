@@ -93,7 +93,8 @@ handleNextClick = async () => {
             {/* row 1 */}
          { !this.state.loading && this.state.articles.map((ele) => {
             return <div className="col-md-4 my-2" key={ele.url} >
-            <NewsItem title ={ele.title ? ele.title.slice(0,40): " "} description= {ele.description}  imageUrl = {ele.urlToImage} url={ele.url} author ={ele.author} date={ele.publishedAt} />
+            <NewsItem title ={ele.title ? ele.title.slice(0,40): " "} description= {ele.description}  imageUrl = {ele.urlToImage} url={ele.url} author ={ele.author} date={ele.publishedAt} source=
+            {ele.source.name} />
             </div>
           }) }
 
