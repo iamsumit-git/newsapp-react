@@ -107,6 +107,11 @@ export class News extends Component {
                 );
               })}
             </div>
+            {/*  this is the where i applied pagimation
+        <div className="container d-flex justify-content-between">
+          <button disabled={this.state.page<=1} type='button' className='btn-sm btn btn-dark' onClick={this.handlePrevClick}> &larr; Previous</button>
+          <button disabled={this.state.page+1 > Math.ceil(this.state.totalResults/this.props.pageSize)} type='button' className='btn-sm btn btn-dark' onClick={this.handleNextClick}>Next &rarr;</button>
+        </div>  */}
           </div>
         </InfiniteScroll>
       </>
