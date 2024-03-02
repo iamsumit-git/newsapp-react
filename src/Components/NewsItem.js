@@ -6,9 +6,9 @@ export class NewsItem extends Component {
     return (
       <div className="my-3">
         <div className="card">
-          <span class="position-absolute top-0 translate-middle badge rounded-pill bg-danger" style={{zIndex :'1', left: '90%'}}>
+          <span className="position-absolute top-0 translate-middle badge rounded-pill bg-danger" style={{zIndex :'1', left: '90%'}}>
             {source}
-            <span class="visually-hidden">unread messages</span>
+            <span className="visually-hidden">unread messages</span>
           </span>
           <img
             src={
