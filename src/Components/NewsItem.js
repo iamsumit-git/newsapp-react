@@ -2,11 +2,15 @@ import React, { Component } from "react";
 
 export class NewsItem extends Component {
   render() {
-    let { title, description, imageUrl, url, author, date, source } = this.props;
+    let { title, description, imageUrl, url, author, date, source } =
+      this.props;
     return (
       <div className="my-3">
         <div className="card">
-          <span className="position-absolute top-0 translate-middle badge rounded-pill bg-danger" style={{zIndex :'1', left: '90%'}}>
+          <span
+            className="position-absolute top-0 translate-middle badge rounded-pill bg-danger"
+            style={{ zIndex: "1", left: "90%" }}
+          >
             {source}
             <span className="visually-hidden">unread messages</span>
           </span>
